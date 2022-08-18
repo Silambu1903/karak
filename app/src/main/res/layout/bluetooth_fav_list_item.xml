@@ -1,0 +1,74 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/favRoot"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:layout_margin="10dp"
+    android:background="#030407"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="#030407"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgMachineImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/app_logo"
+            app:layout_constraintBottom_toTopOf="@+id/sve_serial_no"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_del" />
+
+        <ImageView
+            android:id="@+id/img_del"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_trash"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgMachineImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sve_serial_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:text="123"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/imgMachineImage"
+            app:layout_constraintStart_toStartOf="@id/imgMachineImage"
+            app:layout_constraintTop_toBottomOf="@id/imgMachineImage" />
+
+        <TextView
+            android:id="@+id/txtBleMac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+
+            android:text="12"
+            android:textColor="@color/textColor"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/sve_serial_no"
+            app:layout_constraintStart_toStartOf="@id/sve_serial_no"
+            app:layout_constraintTop_toBottomOf="@id/sve_serial_no" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
